@@ -1,0 +1,24 @@
+<body>
+<div class="container">
+  {{> layout}}
+</div>
+
+</body>
+
+<template name="layout">
+  <div class="container">
+    <form>
+      <input id="fileinput" type="file"/>
+      <button type="submit">Upload</button>
+    </form>
+
+    {{#each images}}
+      <a href="#" class="thumbnail">
+        <img src="{{src}}"/>
+      </a>
+
+    {{/each}}
+
+  </div>
+
+</template>
